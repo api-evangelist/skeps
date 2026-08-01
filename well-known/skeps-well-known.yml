@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: probed
+source: live HTTP probes of https://www.skeps.com/.well-known/*
+host: https://www.skeps.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+note: >-
+  No /.well-known/ discovery documents are published on the Skeps host. The apex
+  (skeps.com) 301-redirects to www; llms.txt also returns 404. No developer
+  portal, API documentation, or developer subdomain (developer./docs./api./developers.skeps.com
+  do not resolve) was found. Skeps is a B2B embedded pay-over-time / point-of-sale
+  lending platform with an enterprise "request a demo" model and no public API surface.

@@ -1,7 +1,17 @@
 aid: skeps
 name: Skeps
-description: 'Skeps is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Skeps is a business-to-business embedded finance and pay-over-time platform that
+  lets merchants and lenders offer point-of-sale financing directly inside their
+  own websites, retail stores, and one-to-one sales channels. Built as a microservices
+  platform, Skeps embeds banking and lending services into the buyer journey: its
+  patented technology securely and in real time matches a customer to the best
+  financing offer from a multi-lender network of national banks, credit unions, and
+  fintech lenders, powering pre-approval, offer testing, and checkout financing. Skeps
+  serves verticals including home improvement, retail, telecom, travel and hospitality,
+  health and wellness, automotive, veterinary, financial institutions, and cobrand
+  card programs. It operates an enterprise, request-a-demo sales model and is backed by
+  Accel; this API Evangelist profile was enriched from its public web surface.
 url: https://raw.githubusercontent.com/api-evangelist/skeps/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +19,31 @@ x-backed-by:
 - accel
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://www.skeps.com/hubfs/Favicon%20Final.svg
 tags:
 - Company
 - Consumer
+- Fintech
+- Embedded Finance
+- Lending
+- Point of Sale
+- Pay Over Time
+- Buy Now Pay Later
+- Payments
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +51,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/skeps-domain-security.yml
+- type: WellKnown
+  url: well-known/skeps-well-known.yml
 - type: Website
   url: https://www.skeps.com/
+- type: Blog
+  url: https://www.skeps.com/blog
+- type: TermsOfService
+  url: https://www.skeps.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.skeps.com/privacy-notice
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
